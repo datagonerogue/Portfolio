@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - B2</title>
+    <link rel="stylesheet" href="contact.css">
+
+
+</head>
+
+<body>
+    <header>
+        <nav id="main-nav">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <h1 id="name">Contact Me</h1>
+    </header>
+
+    <section id="contact">
+        <h2 id="header">Get in Touch</h2>
+        <form id="contactForm">
+            <div>
+                <label for="nameInput">Name:</label>
+                <input required type="text" id="nameInput" name="name">
+            </div>
+            <div>
+                <label for="emailInput">Email:</label>
+                <input required type="email" id="emailInput" name="email">
+            </div>
+            <div>
+                <label for="messageInput">Message:</label>
+                <textarea required id="messageInput" name="message"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2023 Smarth Arora
+    </footer>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            const text = `Name: ${formData.get('name')}\nEmail: ${formData.get('email')}\nMessage: ${formData.get('message')}`;
+            download('contact_info.txt', text);
+        });
+
+        function download(filename, text) {
+            const element = document.createElement('a');
+            element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+            element.setAttribute('download', filename);
+
+            element.style.display = 'none';
+            document.body.appendChild(element);
+
+            element.click();
+
+            document.body.removeChild(element);
+        }
+    </script>
+    </script>
+</body>
+
+</html>

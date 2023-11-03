@@ -1,0 +1,104 @@
+html {
+    font-size: 1em;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+h2 {
+    color: #CE5A67;
+    font-size: 2.5em;
+}
+
+
+a {
+    color: #FF6969;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+header {
+    background-color: #1F1717;
+    color: #FCF5ED;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav a {
+    color: #FCF5ED;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+
+section {
+    padding: 50px 20px;
+    text-align: left;
+}
+
+footer {
+    background-color: #1F1717;
+    color: #FCF5ED;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+button {
+    background-color: #CE5A67; 
+    color: #FCF5ED; 
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+#name {
+    font-size: 5em;
+    text-align: center;
+
+}
+
+#about {
+    background-color: #F4BF96;
+    color: #1F1717;
+}
+
+
+#header {
+    text-align: left;
+}
+
+#projects {
+    background-color: #FCF5ED;
+    color: #1F1717;
+}
+
+#contact {
+    background-color: #F4BF96;
+    color: #1F1717;
+}
+
+#message {
+    font-size: 1.5em;
+    color: #CE5A67;
+}

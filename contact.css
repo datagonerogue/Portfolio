@@ -4,21 +4,16 @@ html {
 
 body {
     font-family: 'Arial', sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    background-color: #FCF5ED;
 }
 
 h2 {
     color: #CE5A67;
     font-size: 2.5em;
 }
-
-
 a {
     color: #FF6969;
 }
@@ -56,39 +51,53 @@ footer {
     color: #FCF5ED;
     text-align: center;
     padding: 20px 0;
+    position: fixed;
     bottom: 0;
     width: 100%;
-    margin-top: auto;
 }
-
-
-#name {
-    font-size: 5em;
-    text-align: center;
-
-}
-
-#about {
-    background-color: #F4BF96;
-    color: #1F1717;
-}
-
 
 #header {
-    text-align: left;
-}
-
-#projects {
-    background-color: #FCF5ED;
-    color: #1F1717;
+    text-align: center;
 }
 
 #contact {
-    background-color: #F4BF96;
-    color: #1F1717;
+    background-color: #FCF5ED; 
+    color: #1F1717; 
 }
 
-#message {
-    font-size: 1.5em;
-    color: #CE5A67;
+#contactForm {
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #CE5A67; 
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #CE5A67; 
+}
+
+button {
+    background-color: #CE5A67; 
+    color: #FCF5ED; 
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FF6969; 
+}
+
+label {
+    color: #1F1717;
+    font-size: 1.2em;
 }
